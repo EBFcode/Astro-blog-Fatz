@@ -1,5 +1,5 @@
 ---
-import {navLinks} from './navLinks.js'
+import Navegation from '../components/Navegation.astro'
 
 const pageTitle = "My Blog";
 
@@ -15,25 +15,7 @@ const pageTitle = "My Blog";
 		<title>{pageTitle}</title>
 	</head>
 <body>
-    <header class="flex justify-between p-10 ">
-
-        <div class="bg-white border-2 border-black px-4 py-2">
-            <h1>{pageTitle}</h1>
-        </div>
-
-        <nav class="">
-            <ul class="flex gap-5 ">
-                
-                {navLinks.map((links) => 
-                    <li>
-                        <a class="py-2  px-5 text-white bg-black hover:bg-green-950" href={links.href}>{links.text}</a>
-                    </li>
-                )}
-                
-            </ul>
-            
-        </nav>
-    </header>
+    <Navegation />
 
     <main class="p-10">
         <h1>My Astro Learning Blog</h1>

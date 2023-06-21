@@ -1,0 +1,6 @@
+---
+const {platform, username} = Astro.props;
+---
+<a class="text-3xl hover:text-purple-600" href={`https://www.${platform}.com/${username}`} target="_blank">
+    <i class=`fa-brands fa-${platform}`></i>
+</a>

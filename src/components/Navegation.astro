@@ -1,0 +1,28 @@
+---
+const navLinks = [
+    {
+        href: "/",
+        text: "Home",
+    },
+    {
+        href: "/about/",
+        text: "About",
+    },
+    {
+        href: "/blog/",
+        text: "Blog",
+    },
+];
+
+---
+
+<ul class="flex gap-5 ">
+    {navLinks.map((links) => 
+        <li>
+            <a class="py-2  px-5 text-white bg-black hover:bg-green-950" href={links.href}>{links.text}</a>
+        </li>
+    )}
+</ul>
+
+
+

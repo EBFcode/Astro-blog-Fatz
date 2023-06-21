@@ -1,0 +1,14 @@
+---
+import Social from "./Social.astro";
+const platform = "github";
+const username = "ebfcode";
+---
+
+        <footer class="p-10 text-center">
+            <Social platform="github" username="jhonyrobles"/>
+            <Social platform="facebook" username="jhonyrobles"/>
+            <Social platform="instagram" username="jhonyrobles"/>
+            <p>Learn more about my projects on <a class="text-red-500 underline hover:text-red-950" href={`https://www.${platform}.com/${username}`} target="_blank">{platform.toUpperCase()}</a>!</p>
+        </footer>
+    </body>
+</html> 

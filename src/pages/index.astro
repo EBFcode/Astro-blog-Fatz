@@ -1,23 +1,14 @@
 ---
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 import Navegation from '../components/Navegation.astro'
 
 const pageTitle = "My Astro Learning Blog";
-
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<Navegation />
+<Header />
+<main class="p-10">
+	<h1 class="text-lg font-bold">The home WE!</h1>
+</main>
+<Footer />
 
-		<main class="p-10">
-
-		</main>
-	</body>
-</html>

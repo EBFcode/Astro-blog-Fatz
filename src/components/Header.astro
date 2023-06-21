@@ -1,0 +1,27 @@
+---
+import Navegation from "./Navegation.astro";
+
+const pageTitle = 'Blog Bro'
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+		<title>{pageTitle}</title>
+	</head>
+	<body>
+        <header class="flex justify-between p-10 ">
+
+            <div class="bg-white border-2 border-black px-4 py-2">
+                <h1>{pageTitle}</h1>
+            </div>
+
+            <nav class="">
+                <Navegation />
+            </nav>
+
+        </header>
